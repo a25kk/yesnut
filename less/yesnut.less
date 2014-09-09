@@ -74,9 +74,13 @@ h1, h2, h3, h4, h5, h6 {
 	.heading-font;
 	font-weight: 700;
 	border-radius: 3px;
-	font-size: 45px;
+	font-size: 15px;
 	padding: 10px 20px;
     width: 60%;
+
+@media(min-width:768px) {
+    font-size: 45px;
+    }
 }
 
 // Custom Navigation Bar
@@ -86,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-color: transparent;
 	.navbar-brand {
 		color: @brand-primary;
-		.script-font;
+		.heading-font;
         &:hover,
         &:focus,
         &:active,

@@ -10,7 +10,7 @@ $(function() {
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
-            var phone = $("input#phone").val();
+            var subject = $("input#subject").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -32,13 +32,9 @@ $(function() {
                           }
                         ],
                       'autotext': 'true',
-                      'subject': 'Formularversand yesnut.de',
+                      'subject': 'Anfrage von ' + name + ': ' + subject,
                       'html': message
                     }
-                    'name': name,
-                    'phone': phone,
-                    'email': email,
-                    'message': message
                 },
                 cache: false,
                 success: function() {

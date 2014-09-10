@@ -26,7 +26,7 @@ $(function() {
                       'from_email': email,
                       'to': [
                           {
-                            'email': 'sd@ade25.de', 'info@yesnut.de'
+                            'email': 'info@yesnut.de',
                             'name': 'Test',
                             'type': 'to'
                           }
